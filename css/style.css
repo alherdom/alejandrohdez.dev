@@ -92,7 +92,7 @@ footer {
     text-align: justify;
     color: white;
     background-color: #5840ff;
-    height: 80vh;
+    height: auto;
 }
 
 footer p {
