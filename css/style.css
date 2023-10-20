@@ -39,8 +39,8 @@ a {
 }
 
 svg {
-    fill: none;
-    stroke: none;
+    fill: black;
+    stroke: black;
     transition: 0.2s;
 }
 
