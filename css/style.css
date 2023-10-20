@@ -120,12 +120,13 @@ footer p {
         margin-right: 80px;
         font-size: smaller;
         height: min-content;
-        margin-bottom: 100px;
     }
 
     footer {
-        font-size: smaller;
-        margin-top: 160px;
+        height: 40px;
+    }
+    footer p {
+        font-size: 12px;
         height: min-content;
     }
 
