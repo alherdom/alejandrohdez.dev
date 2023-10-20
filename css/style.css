@@ -102,13 +102,13 @@ footer p {
 @media screen and (max-width: 767px) {
 
     li:not(:last-child) a {
-        margin-right: 40px;
+        margin-right: 25px;
     }
 
     .sns-icons {
         margin-top: 40px;
         justify-content: flex-start;
-        margin-left: -70px;
+        margin-left: -75px;
     }
 
     .title {
@@ -123,11 +123,13 @@ footer p {
     }
 
     footer {
-        height: 40px;
+        margin-top: 160px !important;
+        height: auto;
+
     }
+
     footer p {
         font-size: 12px;
-        height: min-content;
     }
 
 }
