@@ -124,6 +124,7 @@ footer p {
     }
 
     footer {
+        font-size: smaller;
         margin-top: 160px;
         height: min-content;
     }
