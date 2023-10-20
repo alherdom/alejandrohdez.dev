@@ -120,7 +120,7 @@ footer p {
         font-size: smaller;
     }
     footer {
-        height: auto;
+        height: 80vh;
     }
 
 }
