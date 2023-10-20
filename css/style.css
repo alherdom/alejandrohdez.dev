@@ -123,6 +123,7 @@ footer p {
 
     footer {
         margin-top: 160px;
+        height: min-content;
     }
 
 }
