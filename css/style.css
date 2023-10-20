@@ -106,12 +106,13 @@ footer p {
     }
 
     .sns-icons {
-        margin-top: 40px;
+        margin-top: 5px;
         justify-content: flex-start;
         margin-left: -75px;
     }
 
     .title {
+        margin-top: 5px;
         margin-right: 80px;
         text-align: center;
     }
@@ -122,14 +123,12 @@ footer p {
         height: min-content;
     }
 
-    footer {
-        margin-top: 160px !important;
-        height: auto;
-
+    .intro p {
+        margin-top: 5px;
     }
 
-    footer p {
-        font-size: 12px;
+    footer {
+        display: none;
     }
 
 }
