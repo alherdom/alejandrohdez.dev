@@ -34,6 +34,9 @@ li:not(:last-child) a {
     margin-right: 80px;
 }
 
+a{
+    text-decoration: none;
+}
 svg {
     transition: 0.2s;
 }
