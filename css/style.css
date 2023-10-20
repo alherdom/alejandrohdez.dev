@@ -119,6 +119,7 @@ footer p {
     .intro {
         margin-right: 80px;
         font-size: smaller;
+        height: min-content;
     }
 
     footer {
