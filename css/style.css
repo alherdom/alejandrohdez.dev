@@ -76,8 +76,13 @@ svg:hover {
     padding: 10px;
 }
 
-.blog {
+.blog,
+.calcu {
     padding-top: 30px;
+}
+
+.texas {
+    padding-top: 10px;
 }
 
 .tags {
