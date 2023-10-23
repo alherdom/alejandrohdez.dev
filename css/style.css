@@ -141,6 +141,10 @@ svg:hover {
 
     .cards {
         justify-content: center;
-        padding-left: 2%;
+    }
+
+    .card {
+        width: auto;
+        height: auto;
     }
 }
