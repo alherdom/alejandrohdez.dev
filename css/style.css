@@ -9,6 +9,10 @@ body {
     justify-content: center;
 }
 
+.icon {
+    margin: auto;
+}
+
 a {
     color: #57534e;
     text-decoration: none;
@@ -135,10 +139,6 @@ svg:hover {
 }
 
 @media (max-width: 570px) {
-    .icon {
-        margin: auto;
-    }
-
     .intro {
         display: none;
     }
