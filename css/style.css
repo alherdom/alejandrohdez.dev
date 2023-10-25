@@ -244,12 +244,8 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
     }
 }
 
-@media (max-width: 1180px) {
-    .animated {
-        margin-top: 90px;
-        margin-left: 0px;
-        height: auto;
-        width: auto;
-        display: block;
+@media (max-width: 1385px) {
+    .dashboard {
+        height: 50%;
     }
 }
