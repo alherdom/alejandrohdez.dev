@@ -224,7 +224,7 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
 
     .dashboard {
         margin-top: 5px;
-        margin-right: auto;
+        margin-left: 10%;
     }
 
     .cards {
@@ -240,11 +240,6 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
 
     .projects {
         font-size: 1.6em;
-    }
-
-    img {
-        height: auto;
-        margin-right: 50%;
     }
 }
 
