@@ -10,7 +10,7 @@ body {
 }
 
 .rayo-img {
-    height: 30px;
+    height: 32px;
     transition: 0.2s;
 }
 
@@ -105,22 +105,17 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
     margin-top: -12%;
     font-size: 2em;
     font-weight: normal;
-    text-align: justify;
-    justify-content: center;
 }
 
 .posts {
     margin-top: 20px;
     font-size: 2em;
     font-weight: normal;
-    text-align: justify;
-    justify-content: center;
 }
 
 .cards {
     margin-top: 20px;
-    text-align: justify;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card {
@@ -129,10 +124,12 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
     width: 350px;
     box-shadow: 0 4px 8px #57534e;
     transition: transform 0.1s;
+    z-index: 0;
 }
 
 .card:hover {
     transform: scale(1.1);
+    z-index: 1;
 }
 
 .card-img-top {
@@ -142,6 +139,10 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
 .blog,
 .calcu {
     padding-top: 30px;
+}
+
+.bookmarks {
+    padding-top: 70px;
 }
 
 .texas {
@@ -207,6 +208,10 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
     .card {
         width: auto;
         height: auto;
+    }
+
+    btn {
+        margin-bottom: 15px;
     }
 }
 
