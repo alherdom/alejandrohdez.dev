@@ -228,7 +228,7 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
     .title {
         font-size: 2em;
         margin-top: 65px;
-        margin-left: 25px;
+        margin-left: auto;
         text-align: center;
     }
 
@@ -242,10 +242,10 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
         font-weight: 400;
         text-align: center;
         margin-top: 10px;
-        margin-left: 25px;
     }
 
     .dashboard {
+        text-align: center;
         margin-top: 5px;
         margin-left: 10%;
     }
