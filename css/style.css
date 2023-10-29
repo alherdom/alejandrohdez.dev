@@ -114,8 +114,9 @@ svg#freepik_stories-dashboard.animated #freepik--Gears--inject-14 {
 }
 
 .cards {
+    margin-left: -130px;
     margin-top: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .card {
