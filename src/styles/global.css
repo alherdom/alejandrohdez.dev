@@ -190,16 +190,6 @@ hr {
 	white-space: nowrap;
 }
 
-.font-logo {
-	font-family: 'Mantten', sans-serif;
-	font-size: 2.5em;
-	padding: 0 !important;
-}
-
-.font-logo:hover {
-	color: var(--pink) !important;
-}
-
 .title-home {
 	font-family: 'Mantten', sans-serif;
 	font-weight: lighter;
@@ -207,12 +197,16 @@ hr {
 
 .name {
 	/* color: var(--pink) !important; */
-	font-family: 'Mantten', sans-serif;
-	font-size: 1.4em;
+	/* font-family: 'Mantten', sans-serif; */
+	/* font-size: 1.em; */
+	color: var(--pink);
+	font-weight: bold;
+	font-style: italic;
 }
 
 .home-parragraph {
 	margin-top: 40px;
+	text-align: justify;
 }
 
 .education {
@@ -223,6 +217,6 @@ hr {
 	color: var(--pink);
 }
 
-.link:hover {
-	color: var(--pink) !important;
+.title {
+	text-align: center;
 }

@@ -53,16 +53,34 @@ import HeaderLink from "./HeaderLink.astro";
   nav a.active {
     text-decoration: none;
     /* border-bottom-color: var(--accent); */
+    color: #f050f7;
+    border-bottom-color: #f050f7;
+  }
+  nav a:hover {
+    cursor: pointer;
+    color: #f050f7;
     border-bottom-color: #f050f7;
   }
   .social-links,
   .social-links a {
     display: flex;
   }
-  .social-links:hover {
+  .social-links a:hover {
     cursor: pointer;
     color: #f050f7;
+    border-bottom-color: rgb(15, 15, 15) !important;
   }
+  .font-logo {
+    font-family: "Mantten", sans-serif;
+    font-size: 2.5em;
+    padding: 0 !important;
+    border-bottom-color: rgb(15, 15, 15) !important;
+  }
+  .font-logo:hover {
+    color: var(--pink) !important;
+    border-bottom-color: rgb(15, 15, 15) !important;
+  }
+
   @media (max-width: 720px) {
     .social-links {
       display: none;
