@@ -222,3 +222,7 @@ hr {
 .education:hover {
 	color: var(--pink);
 }
+
+.link:hover {
+	color: var(--pink) !important;
+}
