@@ -14,7 +14,7 @@
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
-	--pink: #F050F7;
+	--violet: #5740FE;
 }
 
 @font-face {
@@ -110,6 +110,8 @@ a:hover {
 p {
 	margin-bottom: 1em;
 	line-height: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
 .prose p {
@@ -196,11 +198,12 @@ hr {
 }
 
 .name {
-	/* color: var(--pink) !important; */
+	/* color: var(--violet) !important; */
 	/* font-family: 'Mantten', sans-serif; */
 	/* font-size: 1.em; */
-	color: var(--pink);
-	font-weight: bold;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: var(--violet);
+	font-weight: bolder;
 	font-style: italic;
 }
 
@@ -214,7 +217,7 @@ hr {
 }
 
 .education:hover {
-	color: var(--pink);
+	color: var(--violet);
 }
 
 .title {
