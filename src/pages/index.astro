@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import { Image } from "astro:assets";
+import myProfileImage from "../../public/profile_image.jpg";
 ---
 
 <Layout title="Alejandro Hernández">
@@ -10,8 +12,8 @@ import Card from "../components/Card.astro";
     <div class="left">
       <h1 class="title-home">FullStack Developer</h1>
       <p class="home-parragraph">
-        I'm <b>Alejandro</b> and enjoy crafting clean and efficient code, coupled with
-        minimalist and highly usable designs. Feel free to explore and don't
+        I'm <b>Alejandro</b> and enjoy crafting clean and efficient code, coupled
+        with minimalist and highly usable designs. Feel free to explore and don't
         hesitate to reach out to me.
       </p>
       <p class="social-links">
@@ -104,14 +106,11 @@ import Card from "../components/Card.astro";
       </p>
     </div>
     <div class="right">
-      <a href="https://www.linkedin.com/in/alherdom" target="_blank">
-        <img
-          class="profile-img"
-          src="public/profile_image.jpg"
-          alt="Profile image"
-          title="Picos de europa"
-        />
-      </a>
+      <Image src={myProfileImage} alt="texto descriptivo" />
+
+      <!-- <a href="https://www.linkedin.com/in/alherdom" target="_blank">
+        <img class="profile-img" src="dist/profile_image.jpg" />
+      </a> -->
     </div>
   </main>
   <main>
