@@ -106,11 +106,7 @@ import myProfileImage from "../../public/profile_image.jpg";
       </p>
     </div>
     <div class="right">
-      <Image src={myProfileImage} alt="texto descriptivo" />
-
-      <!-- <a href="https://www.linkedin.com/in/alherdom" target="_blank">
-        <img class="profile-img" src="dist/profile_image.jpg" />
-      </a> -->
+      <Image src={myProfileImage} alt="profile image" />
     </div>
   </main>
   <main>
@@ -233,6 +229,13 @@ import myProfileImage from "../../public/profile_image.jpg";
     color: #ccf381;
     text-align: left;
   }
+
+  @media (max-width: 768px) {
+    .title-home {
+      font-size: 3em;
+    }
+  }
+
   .home-parragraph {
     padding: 0;
     font-size: 1.2em;
