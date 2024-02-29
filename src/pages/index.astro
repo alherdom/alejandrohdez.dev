@@ -1,6 +1,5 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
@@ -8,32 +7,63 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 <!doctype html>
 <html lang="en">
   <head>
+    <link href="https://fonts.cdnfonts.com/css/sf-ui-text-2" rel="stylesheet" />
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body>
-    <Header />
     <main>
-      <h1 class="title"><span class="title-home"> Hola, mundo!</span></h1>
-      <p class="home-parragraph">
-        Bienvenido/a a mi portfolio personal, mi nombre es<span class="name">
-          Alejandro Hernández</span
-        >, técnico superior en <a
-          href="https://todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-web.html"
-          target="_blank"
-          class="education">Desarrollo de Aplicaciones Web</a
-        >, y técnico superior en Automatización y Robótica Industrial. Aquí podrás encontrar
-        información sobre algunos de mis proyectos y habilidades en el campo del
-        desarrollo web, información de contacto y distintos enlaces a <a
-          href="https://www.linkedin.com/in/alherdom"
-          target="_blank"
-          class="education">LinkedIn</a
-        > y <a
-          href="https://github.com/alherdom"
-          target="_blank"
-          class="education">GitHub</a
-        >, espero resulte de interés y estaré encantado de recibir cualquier
-        contacto.
-      </p>
+      <div class="left">
+        <h1 class="title-home">
+          Full-Stack Developer<span class="point">.</span>
+        </h1>
+        <p class="home-parragraph">
+          I enjoy crafting clean and efficient code, coupled with minimalist and
+          highly usable designs. Feel free to explore and don't hesitate
+          to reach out to me.
+        </p>
+        <p class="social-links">
+          <a href="https://www.linkedin.com/in/alherdom" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="32"
+              height="32"
+              viewBox="0 0 48 48"
+            >
+              <path
+                fill="currentColor"
+                d="M8.421 14h.052 0C11.263 14 13 12 13 9.5 12.948 6.945 11.263 5 8.526 5 5.789 5 4 6.945 4 9.5 4 12 5.736 14 8.421 14zM4 17H13V43H4zM44 26.5c0-5.247-4.253-9.5-9.5-9.5-3.053 0-5.762 1.446-7.5 3.684V17h-9v26h9V28h0c0-2.209 1.791-4 4-4s4 1.791 4 4v15h9C44 43 44 27.955 44 26.5z"
+              ></path>
+            </svg>
+          </a>
+          <br>
+          <a href="https://github.com/alherdom" target="_blank">
+            <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
+              ><path
+                fill="currentColor"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              ></path></svg
+            >
+          </a>
+        </p>
+      </div>
+      <div class="right">
+        <a href="https://www.linkedin.com/in/alherdom" target="_blank">
+          <img
+            class="profile-img"
+            src="public/foto_picos_europa.jpg"
+            alt="Profile image"
+            title="Picos de europa"
+          />
+        </a>
+      </div>
+    </main>
+    <main>
+      <h1 class="title-home">Projects 🏗️</h1>
+    </main>
+    <main>
+      <h1 class="title-home">Contact 🏗️</h1>
     </main>
     <Footer />
   </body>
