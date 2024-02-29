@@ -1,70 +1,249 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <link href="https://fonts.cdnfonts.com/css/sf-ui-text-2" rel="stylesheet" />
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <main>
-      <div class="left">
-        <h1 class="title-home">
-          Full-Stack Developer<span class="point">.</span>
-        </h1>
-        <p class="home-parragraph">
-          I enjoy crafting clean and efficient code, coupled with minimalist and
-          highly usable designs. Feel free to explore and don't hesitate
-          to reach out to me.
-        </p>
-        <p class="social-links">
-          <a href="https://www.linkedin.com/in/alherdom" target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="32"
-              height="32"
-              viewBox="0 0 48 48"
-            >
-              <path
-                fill="currentColor"
-                d="M8.421 14h.052 0C11.263 14 13 12 13 9.5 12.948 6.945 11.263 5 8.526 5 5.789 5 4 6.945 4 9.5 4 12 5.736 14 8.421 14zM4 17H13V43H4zM44 26.5c0-5.247-4.253-9.5-9.5-9.5-3.053 0-5.762 1.446-7.5 3.684V17h-9v26h9V28h0c0-2.209 1.791-4 4-4s4 1.791 4 4v15h9C44 43 44 27.955 44 26.5z"
-              ></path>
-            </svg>
-          </a>
-          <br>
-          <a href="https://github.com/alherdom" target="_blank">
-            <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
-              ><path
-                fill="currentColor"
-                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-              ></path></svg
-            >
-          </a>
-        </p>
-      </div>
-      <div class="right">
+<Layout title="Alejandro Hernández">
+  <link href="https://fonts.cdnfonts.com/css/sf-ui-text-2" rel="stylesheet" />
+
+  <main>
+    <div class="left">
+      <h1 class="title-home">FullStack Developer</h1>
+      <p class="home-parragraph">
+        I'm <b>Alejandro</b> and enjoy crafting clean and efficient code, coupled with
+        minimalist and highly usable designs. Feel free to explore and don't
+        hesitate to reach out to me.
+      </p>
+      <p class="social-links">
         <a href="https://www.linkedin.com/in/alherdom" target="_blank">
-          <img
-            class="profile-img"
-            src="public/foto_picos_europa.jpg"
-            alt="Profile image"
-            title="Picos de europa"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="32"
+            height="32"
+            viewBox="0 0 48 48"
+          >
+            <path
+              fill="currentColor"
+              d="M8.421 14h.052 0C11.263 14 13 12 13 9.5 12.948 6.945 11.263 5 8.526 5 5.789 5 4 6.945 4 9.5 4 12 5.736 14 8.421 14zM4 17H13V43H4zM44 26.5c0-5.247-4.253-9.5-9.5-9.5-3.053 0-5.762 1.446-7.5 3.684V17h-9v26h9V28h0c0-2.209 1.791-4 4-4s4 1.791 4 4v15h9C44 43 44 27.955 44 26.5z"
+            ></path>
+          </svg>
         </a>
-      </div>
-    </main>
-    <main>
-      <h1 class="title-home">Projects 🏗️</h1>
-    </main>
-    <main>
-      <h1 class="title-home">Contact 🏗️</h1>
-    </main>
-    <Footer />
-  </body>
-</html>
+        <a href="https://github.com/alherdom" target="_blank">
+          <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
+            ><path
+              fill="currentColor"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            ></path></svg
+          >
+        </a>
+        <a href="mailto:alherdom@outlook.com" target="_blank">
+          <svg
+            width="40px"
+            height="40px"
+            viewBox="0 0 48 48"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            stroke="none"
+            stroke-width="1.9200000000000004"
+            ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+              <path d="M0 0h48v48H0z" fill="none"></path>
+              <g id="Shopicon">
+                <path
+                  d="M24,44c5.343,0,10.365-2.08,14.143-5.858l-2.829-2.828C32.292,38.336,28.274,40,24,40c-8.822,0-16-7.178-16-16 S15.178,8,24,8s16,7.178,16,16c0,2.206-1.794,4-4,4s-4-1.794-4-4v-8h-4v1.079C26.822,16.397,25.459,16,24,16c-4.418,0-8,3.582-8,8 s3.582,8,8,8c2.394,0,4.536-1.057,6.003-2.723C31.47,30.942,33.611,32,36,32c4.411,0,8-3.589,8-8c0-11.028-8.972-20-20-20 S4,12.972,4,24S12.972,44,24,44z M24,28c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S26.206,28,24,28z"
+                ></path>
+              </g>
+            </g></svg
+          >
+        </a>
+        <a href="public/alejandrohdez_cv.pdf" target="_blank">
+          <svg
+            fill="currentColor"
+            height="36px"
+            width="36px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 392.533 392.533"
+            xml:space="preserve"
+            stroke="currentColor"
+            stroke-width="6"
+            ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+              <g>
+                <g>
+                  <path
+                    d="M196.137,45.834c-25.859,0-46.998,21.075-46.998,46.998c0,25.859,21.139,46.933,46.998,46.933 s46.998-21.075,46.998-46.998S221.996,45.834,196.137,45.834z M196.137,117.851c-13.77,0-25.083-11.313-25.083-25.083 c0-13.77,11.248-25.083,25.083-25.083s25.083,11.313,25.083,25.083C221.22,106.537,209.907,117.851,196.137,117.851z"
+                  ></path>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M258.521,163.362c-39.887-15.515-84.752-15.515-124.638,0c-13.059,5.107-21.786,18.101-21.786,32.388v44.347 c-0.065,6.012,4.849,10.925,10.861,10.925h146.424c6.012,0,10.925-4.848,10.925-10.925V195.75 C280.307,181.463,271.58,168.469,258.521,163.362z M258.521,229.236H133.883v-33.422c0-5.301,3.168-10.214,7.887-12.024 c34.844-13.511,74.02-13.511,108.865,0c4.719,1.875,7.887,6.659,7.887,12.024V229.236z"
+                  ></path>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <path
+                    d="M313.083,0H131.491c-8.404,0-16.291,3.232-22.238,9.18L57.018,61.414c-5.947,5.948-9.18,13.834-9.18,22.238v277.333 c0,17.39,14.158,31.547,31.547,31.547h233.762c17.39,0,31.547-14.158,31.547-31.547V31.547C344.501,14.158,330.343,0,313.083,0z M112.032,37.236v27.022H85.01L112.032,37.236z M322.715,116.816h-40.598c-6.012,0-10.925,4.849-10.925,10.925 c0,6.012,4.848,10.925,10.925,10.925h40.598v19.394h-14.869c-6.012,0-10.925,4.848-10.925,10.925 c0,6.012,4.849,10.925,10.925,10.925h14.869v181.139c0,5.366-4.331,9.697-9.632,9.697H79.192c-5.301,0-9.632-4.331-9.632-9.632 V86.044h53.398c6.012,0,10.925-4.848,10.925-10.925V21.721h179.2c5.301,0,9.632,4.331,9.632,9.632V116.816z"
+                  ></path>
+                </g>
+              </g>
+            </g></svg
+          >
+        </a>
+      </p>
+    </div>
+    <div class="right">
+      <a href="https://www.linkedin.com/in/alherdom" target="_blank">
+        <img
+          class="profile-img"
+          src="public/profile_image.jpg"
+          alt="Profile image"
+          title="Picos de europa"
+        />
+      </a>
+    </div>
+  </main>
+  <main>
+    <ul role="list" class="link-card-grid">
+      <!-- <Card
+        href="https://astro.build/themes/"
+        title="Themes"
+        body="Explore a galaxy of community-built starter themes."
+      />
+      <Card
+        href="https://astro.build/chat/"
+        title="Community"
+        body="Come say hi to our amazing Discord community. ❤️"
+      /> -->
+    </ul>
+    <h1 class="title-home">Projects 🏗️</h1>
+  </main>
+</Layout>
+
+<style>
+  body {
+    background: linear-gradient(45deg, #1b5aec, #361bff, #8357ff);
+    background-size: 200% 200%;
+    animation: gradient 10s ease-in infinite;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  main {
+    font-family: "SF UI Text", sans-serif !important;
+    margin: 0;
+    padding: 3em 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: white;
+    font-size: 20px;
+    line-height: 1.7;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 0.7em;
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+  .left,
+  .right {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  @media (max-width: 1024px) {
+    main {
+      flex-direction: column;
+    }
+
+    .left,
+    .right {
+      width: 95%;
+      padding: 0 20px;
+    }
+  }
+  a {
+    padding: 0px 20px 0px 0px;
+    color: #ccf381;
+  }
+
+  a:hover {
+    color: #333333;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 40px !important;
+    margin: auto;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    transition: ease-out 0.2s;
+  }
+  img:hover {
+    transform: scale(1.02);
+  }
+  .title-home {
+    font-family: "SF UI Text", sans-serif !important;
+    font-size: 4em;
+    font-weight: 900;
+    color: #ccf381;
+    text-align: left;
+  }
+  .home-parragraph {
+    padding: 0;
+    font-size: 1.2em;
+    line-height: 2;
+    text-align: left;
+    margin-bottom: 1.8em;
+  }
+  .social-links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+</style>
