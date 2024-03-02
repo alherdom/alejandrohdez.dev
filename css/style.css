@@ -216,6 +216,50 @@ li {
   .profile-img {
     height: 500px;
   }
+
+  .title-projects {
+    margin-top: -250px;
+    font-size: 3em;
+    text-align: left;
+    padding: 3em 1em;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -300px;
+    padding: 3em 1em;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -100px;
+  }
+
+  .details {
+    margin-top: -100px;
+    padding: 0px 2px 2px 2px;
+    font-size: 1em;
+    text-align: justify;
+  }
+  
+  .tags {
+    justify-content: center;
+    padding-left: 20px;
+  }
+  .tags img {
+    width: 30px;
+    height: 40px;
+    margin-right: 20px;
+  }
+
+  .image img {
+    width: 300px;
+    height: auto;
+  }
 }
 
 @media (max-width: 1024px) {
