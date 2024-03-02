@@ -207,6 +207,10 @@ li {
     text-align: left;
   }
 
+  .home-parragraph {
+    font-size: 1em;
+  }
+
   .social-links {
     display: flex;
     align-items: center;
@@ -228,7 +232,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -300px;
+    margin-top: -250px;
     padding: 3em 1em;
   }
 
@@ -243,7 +247,6 @@ li {
     margin-top: -100px;
     padding: 0px 2px 2px 2px;
     font-size: 1em;
-    text-align: justify;
   }
   
   .tags {
