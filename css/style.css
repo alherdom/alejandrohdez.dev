@@ -35,7 +35,7 @@ footer {
   color: white;
 }
 
-.profile-img {
+.profile-image {
   max-width: 100%;
   border-radius: 8px;
   width: 450px;
@@ -112,13 +112,6 @@ footer {
   color: #ccf381;
 }
 
-.details {
-  padding: 20px 200px 20px 80px;
-  font-size: 1.2em;
-  text-align: left;
-  width: 100%;
-}
-
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -144,17 +137,20 @@ li {
     font-size: 2.5em;
     text-align: center;
     padding: 20px;
+    margin-top: -20px !important;
   }
 
   .social-links {
     justify-content: center;
   }
 
-  .profile-img {
+  .profile-image {
     height: auto;
     width: 100%;
     max-width: 450px;
     margin-top: -20px !important;
+    padding: 0px 10px 0px 10px;
+    border-radius: 28px;
   }
 
   .title-projects {
@@ -172,13 +168,15 @@ li {
   }
 
   .parragraph {
-    padding: 0px 40px 0px 30px;
+    padding: 0px 10px 0px 10px;
     font-size: 1em;
+    text-align: center;
   }
 
   .parragraph-project {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 20px 0px 20px;
     font-size: 1em;
+    text-align: center;
   }
 
   .tags {
@@ -195,8 +193,11 @@ li {
 
 @media (max-width: 390px) {
   .project-image img {
-    width: 85%;
+    width: 90%;
     height: 100%;
-    margin: 0px 40px 0px 40px;
+    margin: 0px 20px 0px 20px;
+  }
+  .profile-image {
+    text-decoration: none;
   }
 }
