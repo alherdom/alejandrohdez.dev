@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "SF UI Text", sans-serif !important;
+  font-family: "SF UI Text", sans-serif;
   background: linear-gradient(45deg, #8357ff, #361bff, #1b5aec, #009AD9 99%);
   background-size: 200% 200%;
   animation: gradient 10s ease-in infinite;
@@ -57,7 +57,8 @@ footer {
   margin-bottom: 0.7em;
 }
 
-.parragraph, .parragraph-project {
+.parragraph,
+.parragraph-project {
   padding: 0;
   font-size: 1.2em;
   line-height: 2;
@@ -70,7 +71,7 @@ footer {
 }
 
 .social-links>a {
-  padding: 0px 20px 0px 0px;
+  padding: 0px 40px 0px 0px;
   color: black;
   transition: 0.2s ease-in-out;
 }
@@ -81,31 +82,27 @@ footer {
 
 /* PROJECTS */
 .title-projects {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 900;
   color: #ccf381;
   text-align: center;
-  width: 80%;
 }
 
 .project-image {
-  display: flex;
   overflow: hidden;
-  background-color: transparent;
-  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
 }
 
 .project-image img {
   width: 500px;
   height: 380px;
   border-radius: 8px;
-  object-fit: cover;
+  /* object-fit: cover; */
   transition: 0.2s ease-in-out;
-  ;
-}
-
-.project-image img:hover {
-  box-shadow: #333333 2px 10px 10px 0px;
 }
 
 .project-name>a:hover {
@@ -120,17 +117,9 @@ footer {
 .tags img {
   width: 40px;
   height: 50px;
-  margin-right: 40px;
+  padding: 0px 40px 0px 0px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 5px;
-}
 
 @media (max-width: 768px) {
   .title-home {
@@ -141,7 +130,8 @@ li {
   }
 
   .social-links {
-    justify-content: center;
+    justify-content: space-around;
+    padding-left: 35px;
   }
 
   .profile-image {
@@ -159,6 +149,12 @@ li {
 
   .project-name {
     text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
   }
 
   .project-image img {
@@ -180,14 +176,13 @@ li {
   }
 
   .tags {
-    justify-content: center;
-    padding-left: 0;
+    justify-content: space-around;
   }
 
   .tags img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px;
+    width: 45px;
+    padding: 0px 10px 0px 0px;
+    margin: 0px 0px 0px 20px;
   }
 }
 
@@ -197,6 +192,7 @@ li {
     height: 100%;
     margin: 0px 20px 0px 20px;
   }
+
   .profile-image {
     text-decoration: none;
   }
